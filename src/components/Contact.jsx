@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, MessageCircle, Mail, MapPin } from 'lucide-react';
+import { LuArrowRight } from 'react-icons/lu';
 
 const Contact = ({ contactRef, isDarkMode }) => {
   return (
@@ -18,10 +19,10 @@ const Contact = ({ contactRef, isDarkMode }) => {
               {[
                 { icon: <Phone className="w-6 h-6" />, title: "Phone", value: "+254 790 889 066", link: "tel:+254790889066" },
                 { icon: <MessageCircle className="w-6 h-6" />, title: "WhatsApp", value: "+254 789 296 373", link: "https://wa.me/254789296373" },
-                { icon: <Mail className="w-6 h-6" />, title: "Email", value: "info@uniassisthub.com", link: "mailto:info@uniassisthub.com" },
+                { icon: <Mail className="w-6 h-6" />, title: "Email", value: "info@uniassisthub.co.ke", link: "mailto:info@uniassisthub.co.ke" },
                 { icon: <MapPin className="w-6 h-6" />, title: "Location", value: "Nairobi, Kenya", link: "https://www.google.com/maps/place/JKUAT+Towers/@-1.2843243,36.8184763,871m/data=!3m1!1e3!4m14!1m7!3m6!1s0x182f10d69428395d:0x5feca0500bd24aeb!2sJKUAT+Towers!8m2!3d-1.2843243!4d36.8210512!16s%2Fg%2F11gfp8gplq!3m5!1s0x182f10d69428395d:0x5feca0500bd24aeb!8m2!3d-1.2843243!4d36.8210512!16s%2Fg%2F11gfp8gplq?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"}
               ].map((item, index) => (
-                <div key={index} href={item.link} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
+                <div key={index} className="flex items-center space-x-4">
                   <div className="text-blue-600">{item.icon}</div>
                   <div>
                     <div className="font-semibold">{item.title}</div>
@@ -82,7 +83,7 @@ const Contact = ({ contactRef, isDarkMode }) => {
                 type="submit"
                 className="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
               >
-                Send Message <ArrowRight className="w-5 h-5" />
+                Send Message <LuArrowRight className="w-5 h-5" />
               </button>
             </form>
           </div>

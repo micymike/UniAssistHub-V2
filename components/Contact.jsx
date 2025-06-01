@@ -1,5 +1,6 @@
 import React from 'react';
-import { Phone, MessageCircle, Mail, MapPin, ArrowRight } from 'lucide-react';
+import { Phone, MessageCircle, Mail, MapPin } from 'lucide-react';
+import { LuArrowRight } from 'react-icons/lu';
 
 const Contact = ({ contactRef, isDarkMode }) => {
   return (
@@ -82,7 +83,7 @@ const Contact = ({ contactRef, isDarkMode }) => {
                 type="submit"
                 className="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold transition-colors duration-200 flex items-center justify-center space-x-2"
               >
-                Send Message <ArrowRight className="w-5 h-5" />
+                Send Message <LuArrowRight className="w-5 h-5" />
               </button>
             </form>
           </div>

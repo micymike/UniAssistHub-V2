@@ -11,6 +11,8 @@ import Contact from './components/Contact';
 import Chatbot from './components/Chatbot';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import { MessageCircle, X} from 'lucide-react'; // Import icons from lucide-react
+import './App.css';
 
 const UniAssistHub = () => {
   const [currentSection, setCurrentSection] = useState('home');
